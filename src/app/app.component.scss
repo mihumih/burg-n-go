@@ -1,0 +1,14 @@
+.content {
+  background-image: url("../assets/background-pattern.png");
+  background-size: contain;
+  background-repeat: repeat-y;
+}
+agm-map {
+  height: 300px;
+}
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 10px;
+}

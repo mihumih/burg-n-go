@@ -1,0 +1,70 @@
+.image {
+  width: 300px;
+  height: 300px;
+}
+.image-wrapper {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  &.isEven {
+    order: 1;
+  }
+  @media only screen and (max-width: 700px) {
+    display: none;
+  }
+}
+.image-wrapper-mobile {
+  display: none;
+  @media only screen and (max-width: 700px) {
+    display: flex;
+  }
+}
+.product-details {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media only screen and (max-width: 700px) {
+    width: 100%;
+  }
+  &.isEven {
+    order: 0;
+  }
+  p {
+    width: 100%;
+    padding: 0 60px;
+    text-align: center;
+  }
+  span {
+    width: 100%;
+    text-align: center;
+    color: #f44336;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px 20px 20px 20px;
+  }
+}
+.root {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+  @media only screen and (max-width: 700px) {
+    flex-wrap: wrap;
+  }
+}
+.product-name-wrapper {
+  background-image: url(/assets/yellow-brush-stroke.png);
+  background-repeat: no-repeat;
+  padding: 20px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 36px;
+
+  h2 {
+    margin-left: -30px;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+}

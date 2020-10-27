@@ -1,0 +1,17 @@
+.contact-details {
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+  flex-direction: column;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 40px 30px 40px;
+  p {
+    display: flex;
+    align-items: center;
+  }
+}
+.material-icons {
+  font-size: 40px;
+  padding: 20px;
+}

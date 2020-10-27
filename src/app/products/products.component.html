@@ -1,0 +1,14 @@
+<div class="root">
+  <div class="product-category" *ngFor="let productCategory of menu">
+    <div class="label-wrapper">
+      <h1 [attr.id]="productCategory.label" class="h1-text">{{ productCategory.label }} {{ i }}</h1>
+    </div>
+    <div class="products">
+      <product
+        [product]="product"
+        [isEven]="i % 2"
+        *ngFor="let product of productCategory.products; index as i"
+      ></product>
+    </div>
+  </div>
+</div>

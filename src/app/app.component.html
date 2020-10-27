@@ -1,0 +1,20 @@
+<app-header></app-header>
+<app-content></app-content>
+<div class="content">
+  <products></products>
+  <app-contact></app-contact>
+
+  <agm-map [latitude]="lat" [longitude]="lng">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  </agm-map>
+</div>
+<app-footer></app-footer>
+<button
+  class="scroll-to-top"
+  mat-fab
+  color="warn"
+  aria-label="Scroll to top"
+  (click)="scrollTo($event, '#Hero')"
+>
+  <mat-icon>expand_less</mat-icon>
+</button>

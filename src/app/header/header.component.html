@@ -1,0 +1,50 @@
+<mat-toolbar class="header">
+  <img class="logo" src="assets/logo-burgngo-white.png" />
+  <span class="example-spacer"></span>
+  <button
+    class="menu"
+    mat-icon-button
+    color="accent"
+    aria-label="Menu button"
+    (click)="toggleIsMenuOpen(true)"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <div class="nav-links">
+    <a href="#" (click)="scrollTo($event, '#Burgers')">Burgers</a>
+    <a href="#" (click)="scrollTo($event, '#Garnituri')">Garnituri</a>
+    <a href="#" (click)="scrollTo($event, '#Meniuri')">Meniuri</a>
+    <a href="#" (click)="scrollTo($event, '#Salate')">Salate</a>
+    <a href="#" (click)="scrollTo($event, '#Sosuri')">Sosuri</a>
+    <a href="#" (click)="scrollTo($event, '#Contact')">Contact</a>
+  </div>
+</mat-toolbar>
+<div *ngIf="isMenuOpen" class="mobile-menu">
+  <button
+    class="close-menu"
+    mat-icon-button
+    color="accent"
+    aria-label="Example icon button with a menu icon"
+    (click)="toggleIsMenuOpen(false)"
+  >
+    <mat-icon>close</mat-icon>
+  </button>
+  <a href="#" (click)="scrollTo($event, '#Burgers'); toggleIsMenuOpen(false)"
+    >Burgers</a
+  >
+  <a href="#" (click)="scrollTo($event, '#Garnituri'); toggleIsMenuOpen(false)"
+    >Garnituri</a
+  >
+  <a href="#" (click)="scrollTo($event, '#Meniuri'); toggleIsMenuOpen(false)"
+    >Meniuri</a
+  >
+  <a href="#" (click)="scrollTo($event, '#Salate'); toggleIsMenuOpen(false)"
+    >Salate</a
+  >
+  <a href="#" (click)="scrollTo($event, '#Sosuri'); toggleIsMenuOpen(false)"
+    >Sosuri</a
+  >
+  <a href="#" (click)="scrollTo($event, '#Contact'); toggleIsMenuOpen(false)"
+    >Contact</a
+  >
+</div>

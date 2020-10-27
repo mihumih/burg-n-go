@@ -1,0 +1,24 @@
+<div class="root">
+  <div [class.isEven]="isEven" class="image-wrapper">
+    <img class="image" src="{{ product.image }}" alt="Image produs" />
+  </div>
+  <div [class.isEven]="isEven" class="product-details">
+    <div class="product-name-wrapper">
+      <h2>{{ product.name }}</h2>
+    </div>
+    <div class="image-wrapper-mobile">
+      <img class="image" src="{{ product.image }}" alt="Image produs" />
+    </div>
+    <p>{{ product.description }}</p>
+    <span class="price"> {{ product.price }}</span>
+    <button
+      class="scroll-to-contact"
+      mat-raised-button
+      color="accent"
+      aria-label="Scroll to contact"
+      (click)="scrollTo($event, '#Contact')"
+    >
+      Comanda acum
+    </button>
+  </div>
+</div>
